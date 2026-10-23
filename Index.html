@@ -1,0 +1,3590 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MP Tourism | Heart of Incredible India</title>
+  <meta name="description"
+    content="Official website of Madhya Pradesh State Tourism Development Corporation – destinations, MP Tourism hotels and resorts, tour packages, festivals and wellness.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@400;500;600;700;800&family=Tiro+Devanagari+Hindi&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --navy: #15233B;
+      --ink: #0D1522;
+      --orange: #F59C00;
+      --orange-d: #D98700;
+      --yellow: #FFE173;
+      --paper: #F7F4EE;
+      --sand: #EFE9DD;
+      --white: #fff;
+      --muted: #6B6F78;
+      --line: rgba(21, 35, 59, .12);
+      --green: #1E5F4B;
+      --maroon: #5C293C;
+      --purple: #413278;
+      --serif: 'Fraunces', Georgia, serif;
+      --sans: 'Manrope', system-ui, sans-serif;
+      --hindi: 'Tiro Devanagari Hindi', serif;
+      --r: 28px;
+      --wrap: 1280px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--navy);
+      background: var(--paper);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden
+    }
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button {
+      font: inherit;
+      color: inherit;
+      background: none;
+      border: 0;
+      cursor: pointer
+    }
+
+    .wrap {
+      max-width: var(--wrap);
+      margin: 0 auto;
+      padding: 0 32px
+    }
+
+    .sec {
+      padding: 120px 0
+    }
+
+    .serif {
+      font-family: var(--serif);
+      font-optical-sizing: auto
+    }
+
+    .it {
+      font-style: italic;
+      font-weight: 300
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--orange-d)
+    }
+
+    .kicker::before {
+      content: "";
+      width: 28px;
+      height: 1.5px;
+      background: currentColor
+    }
+
+    .h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(36px, 5vw, 68px);
+      line-height: 1.02;
+      letter-spacing: -.025em;
+      margin-top: 18px
+    }
+
+    .h2 em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--orange-d)
+    }
+
+    .lead {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 480px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: .02em;
+      padding: 16px 26px;
+      border-radius: 999px;
+      white-space: nowrap;
+      transition: transform .25s, background .25s, color .25s, box-shadow .25s
+    }
+
+    .btn:hover {
+      transform: translateY(-2px)
+    }
+
+    .btn-o {
+      background: var(--orange);
+      color: var(--ink)
+    }
+
+    .btn-o:hover {
+      box-shadow: 0 14px 30px rgba(245, 156, 0, .35)
+    }
+
+    .btn-n {
+      background: var(--navy);
+      color: #fff
+    }
+
+    .btn-line {
+      border: 1.5px solid currentColor
+    }
+
+    .btn .ar {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, .08);
+      display: grid;
+      place-items: center;
+      margin-right: -12px;
+      transition: transform .3s
+    }
+
+    .btn:hover .ar {
+      transform: rotate(-45deg)
+    }
+
+    svg.i {
+      width: 18px;
+      height: 18px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex: none
+    }
+
+    .rv {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: opacity 1s cubic-bezier(.2, .7, .2, 1), transform 1s cubic-bezier(.2, .7, .2, 1)
+    }
+
+    .rv.in {
+      opacity: 1;
+      transform: none
+    }
+
+    .d1 {
+      transition-delay: .1s
+    }
+
+    .d2 {
+      transition-delay: .2s
+    }
+
+    .d3 {
+      transition-delay: .3s
+    }
+
+    /* ---------- header ---------- */
+    .util {
+      position: absolute;
+      inset: 0 0 auto;
+      z-index: 51;
+      color: rgba(255, 255, 255, .8);
+      font-size: 12.5px;
+      font-weight: 500
+    }
+
+    .util .wrap {
+      display: flex;
+      justify-content: space-between;
+      height: 38px;
+      align-items: center;
+      max-width: 1440px;
+      border-bottom: 1px solid rgba(255, 255, 255, .14)
+    }
+
+    .util div {
+      display: flex;
+      gap: 22px;
+      align-items: center
+    }
+
+    .util a:hover {
+      color: #fff
+    }
+
+    .util .hi {
+      font-family: var(--hindi);
+      font-size: 14px
+    }
+
+    .hdr {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 38px;
+      z-index: 50;
+      transition: top .35s, background .35s, box-shadow .35s
+    }
+
+    .hdr .wrap {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      height: 82px;
+      max-width: 1440px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--orange);
+      display: grid;
+      place-items: center;
+      font-family: var(--serif);
+      font-weight: 600;
+      font-style: italic;
+      font-size: 19px;
+      color: var(--ink)
+    }
+
+    .brand b {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 23px;
+      letter-spacing: -.01em;
+      display: block;
+      line-height: 1
+    }
+
+    .brand small {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      opacity: .75
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+      margin-left: auto
+    }
+
+    .menu a {
+      color: #fff;
+      font-size: 14.5px;
+      font-weight: 600;
+      position: relative;
+      padding: 6px 0
+    }
+
+    .menu a::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -2px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--orange);
+      transform: translateX(-50%) scale(0);
+      transition: transform .25s
+    }
+
+    .menu a:hover::after {
+      transform: translateX(-50%) scale(1)
+    }
+
+    .hdr-tools {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: #fff
+    }
+
+    .ib {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .3);
+      transition: background .25s
+    }
+
+    .ib:hover {
+      background: rgba(255, 255, 255, .14)
+    }
+
+    .hdr .btn {
+      padding: 12px 22px
+    }
+
+    .burger {
+      display: none
+    }
+
+    .hdr.solid {
+      top: 0;
+      background: rgba(247, 244, 238, .94);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 1px 0 var(--line)
+    }
+
+    .hdr.solid .brand,
+    .hdr.solid .menu a,
+    .hdr.solid .hdr-tools {
+      color: var(--navy)
+    }
+
+    .hdr.solid .ib {
+      border-color: var(--line)
+    }
+
+    /* ---------- hero ---------- */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 720px;
+      color: #fff;
+      overflow: hidden;
+      background: var(--ink)
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transform: scale(1.12);
+      transition: opacity 1.6s ease, transform 8s linear
+    }
+
+    .slide.on {
+      opacity: 1;
+      transform: scale(1)
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(13, 21, 34, .6) 0%, rgba(13, 21, 34, .05) 32%, rgba(13, 21, 34, .15) 55%, rgba(13, 21, 34, .85) 100%)
+    }
+
+    .hero-in {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 40px
+    }
+
+    .hero-in .wrap {
+      max-width: 1440px;
+      width: 100%
+    }
+
+    .hero-hi {
+      font-family: var(--hindi);
+      font-size: 22px;
+      color: var(--yellow);
+      margin-bottom: 8px
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: clamp(52px, 9.2vw, 148px);
+      line-height: .92;
+      letter-spacing: -.035em;
+      max-width: 1100px
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--orange)
+    }
+
+    .hero-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+      margin-top: 34px
+    }
+
+    .hero-row p {
+      max-width: 380px;
+      font-size: 16px;
+      color: rgba(255, 255, 255, .85)
+    }
+
+    .thumbs {
+      display: flex;
+      gap: 10px
+    }
+
+    .thumb {
+      width: 132px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .7);
+      transition: color .3s
+    }
+
+    .thumb span {
+      display: block;
+      height: 2px;
+      background: rgba(255, 255, 255, .25);
+      margin-bottom: 10px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .thumb span::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--orange);
+      transform: scaleX(0);
+      transform-origin: left
+    }
+
+    .thumb.on {
+      color: #fff
+    }
+
+    .thumb.on span::after {
+      animation: fill 6s linear forwards
+    }
+
+    @keyframes fill {
+      to {
+        transform: scaleX(1)
+      }
+    }
+
+    /* search bar */
+    .search {
+      position: relative;
+      z-index: 5;
+      margin: -46px auto 0;
+      max-width: 1180px;
+      background: #fff;
+      border-radius: 999px;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr 1fr auto;
+      align-items: center;
+      padding: 10px 10px 10px 14px;
+      box-shadow: 0 30px 60px rgba(13, 21, 34, .18)
+    }
+
+    .sf {
+      padding: 8px 22px;
+      border-right: 1px solid var(--line);
+      min-width: 0;
+      position: relative
+    }
+
+    .sf:nth-child(4) {
+      border-right: 0
+    }
+
+    .sf label {
+      display: block;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--navy)
+    }
+
+    .sf input,
+    .sf select,
+    .sf .val {
+      border: 0;
+      outline: 0;
+      background: transparent;
+      font: 500 15px var(--sans);
+      color: var(--muted);
+      width: 100%;
+      min-width: 0;
+      padding-top: 2px
+    }
+
+    .sf .val {
+      cursor: pointer;
+      text-align: left
+    }
+
+    .guests {
+      position: absolute;
+      top: calc(100% + 18px);
+      left: 0;
+      width: 280px;
+      background: #fff;
+      border-radius: 22px;
+      padding: 18px 20px;
+      box-shadow: 0 24px 50px rgba(13, 21, 34, .18);
+      display: none
+    }
+
+    .guests.open {
+      display: block
+    }
+
+    .gr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0
+    }
+
+    .gr+.gr {
+      border-top: 1px solid var(--line)
+    }
+
+    .gr b {
+      font-size: 14px
+    }
+
+    .gr small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .gr div:last-child {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700
+    }
+
+    .gr button {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      font-weight: 700
+    }
+
+    .gr button:hover {
+      border-color: var(--orange);
+      color: var(--orange-d)
+    }
+
+    .search .btn {
+      padding: 18px 30px
+    }
+
+    .search-links {
+      max-width: 1180px;
+      margin: 18px auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      font-size: 13.5px;
+      color: var(--muted);
+      font-weight: 600
+    }
+
+    .search-links a {
+      display: flex;
+      align-items: center;
+      gap: 7px
+    }
+
+    .search-links a:hover {
+      color: var(--orange-d)
+    }
+
+    /* ---------- marquee ---------- */
+    .marquee {
+      overflow: hidden;
+      padding: 70px 0 0;
+      white-space: nowrap
+    }
+
+    .mq {
+      display: inline-flex;
+      animation: mq 40s linear infinite
+    }
+
+    .mq span {
+      font-family: var(--serif);
+      font-size: clamp(34px, 5vw, 64px);
+      font-weight: 300;
+      letter-spacing: -.02em;
+      padding: 0 28px;
+      display: inline-flex;
+      align-items: center;
+      gap: 56px
+    }
+
+    .mq span:nth-child(even) {
+      font-style: italic;
+      color: var(--orange-d)
+    }
+
+    .mq span::after {
+      content: "✦";
+      font-size: 22px;
+      color: var(--orange);
+      font-style: normal
+    }
+
+    @keyframes mq {
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    /* ---------- intro ---------- */
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 80px;
+      align-items: start
+    }
+
+    .intro-txt p.big {
+      font-family: var(--serif);
+      font-size: clamp(24px, 2.6vw, 36px);
+      font-weight: 300;
+      line-height: 1.3;
+      letter-spacing: -.01em
+    }
+
+    .intro-txt p.big em {
+      color: var(--orange-d)
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 60px;
+      border-top: 1px solid var(--line)
+    }
+
+    .stat {
+      padding: 26px 20px 0 0
+    }
+
+    .stat b {
+      font-family: var(--serif);
+      font-size: 54px;
+      font-weight: 400;
+      line-height: 1;
+      display: block
+    }
+
+    .stat span {
+      font-size: 13.5px;
+      color: var(--muted);
+      font-weight: 500
+    }
+
+    .intro-img {
+      position: relative;
+      height: 640px
+    }
+
+    .intro-img .a {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 72%;
+      height: 82%;
+      border-radius: var(--r);
+      overflow: hidden
+    }
+
+    .intro-img .b {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 46%;
+      height: 52%;
+      border-radius: var(--r);
+      overflow: hidden;
+      border: 10px solid var(--paper)
+    }
+
+    .intro-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .badge {
+      position: absolute;
+      left: 14%;
+      top: 6%;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: var(--yellow);
+      display: grid;
+      place-items: center;
+      z-index: 2
+    }
+
+    .badge svg {
+      position: absolute;
+      inset: 0;
+      animation: spin 18s linear infinite
+    }
+
+    .badge text {
+      font: 700 11.5px var(--sans);
+      letter-spacing: .2em;
+      fill: var(--navy)
+    }
+
+    .badge i {
+      font-family: var(--hindi);
+      font-style: normal;
+      font-size: 30px;
+      color: var(--navy)
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    /* ---------- experiences accordion ---------- */
+    .dark {
+      background: var(--ink);
+      color: #fff
+    }
+
+    .dark .lead {
+      color: rgba(255, 255, 255, .65)
+    }
+
+    .dark .kicker {
+      color: var(--orange)
+    }
+
+    .dark .h2 em {
+      color: var(--yellow)
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 56px
+    }
+
+    .acc {
+      display: flex;
+      gap: 12px;
+      height: 600px
+    }
+
+    .pane {
+      position: relative;
+      flex: 1;
+      border-radius: var(--r);
+      overflow: hidden;
+      transition: flex .8s cubic-bezier(.6, .05, .2, 1);
+      cursor: pointer;
+      min-width: 0
+    }
+
+    .pane.on {
+      flex: 4.2
+    }
+
+    .pane img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1.2s
+    }
+
+    .pane.on img {
+      transform: scale(1.03)
+    }
+
+    .pane::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(13, 21, 34, .1), rgba(13, 21, 34, .85))
+    }
+
+    .pane .num {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      z-index: 2;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 20px;
+      color: var(--yellow)
+    }
+
+    .pane .vt {
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      z-index: 2;
+      writing-mode: vertical-rl;
+      transform: translateX(-50%) rotate(180deg);
+      font-family: var(--serif);
+      font-size: 28px;
+      white-space: nowrap;
+      transition: opacity .4s
+    }
+
+    .pane.on .vt {
+      opacity: 0
+    }
+
+    .pane .body {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      padding: 36px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .5s .25s, transform .5s .25s
+    }
+
+    .pane.on .body {
+      opacity: 1;
+      transform: none
+    }
+
+    .pane h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 44px;
+      letter-spacing: -.02em;
+      line-height: 1
+    }
+
+    .pane p {
+      max-width: 440px;
+      color: rgba(255, 255, 255, .8);
+      margin: 12px 0 20px
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px
+    }
+
+    .chips a {
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .14);
+      backdrop-filter: blur(8px);
+      transition: background .25s, color .25s
+    }
+
+    .chips a:hover {
+      background: var(--orange);
+      color: var(--ink)
+    }
+
+    /* ---------- destinations bento ---------- */
+    .bento {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 260px;
+      gap: 16px
+    }
+
+    .tile {
+      position: relative;
+      border-radius: var(--r);
+      overflow: hidden;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 26px
+    }
+
+    .tile.w2 {
+      grid-column: span 2
+    }
+
+    .tile.h2r {
+      grid-row: span 2
+    }
+
+    .tile img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1s cubic-bezier(.2, .7, .2, 1)
+    }
+
+    .tile:hover img {
+      transform: scale(1.07)
+    }
+
+    .tile::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(transparent 45%, rgba(13, 21, 34, .78))
+    }
+
+    .tile>*:not(img) {
+      position: relative;
+      z-index: 1
+    }
+
+    .tile .tag {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      background: var(--yellow);
+      color: var(--navy);
+      padding: 6px 11px;
+      border-radius: 999px
+    }
+
+    .tile h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 30px;
+      letter-spacing: -.015em;
+      line-height: 1.05
+    }
+
+    .tile.h2r h3 {
+      font-size: 44px
+    }
+
+    .tile p {
+      font-size: 14px;
+      opacity: .85;
+      margin-top: 4px
+    }
+
+    .tile .go {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #fff;
+      color: var(--navy);
+      display: grid;
+      place-items: center;
+      transform: scale(0);
+      transition: transform .35s
+    }
+
+    .tile:hover .go {
+      transform: scale(1)
+    }
+
+    /* ---------- stays ---------- */
+    .stays-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 44px
+    }
+
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap
+    }
+
+    .filters button {
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 13.5px;
+      font-weight: 600;
+      transition: all .25s
+    }
+
+    .filters button.on,
+    .filters button:hover {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #fff
+    }
+
+    .track {
+      display: flex;
+      gap: 22px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      padding: 0 32px 8px;
+      margin: 0 -32px;
+      cursor: grab
+    }
+
+    .track::-webkit-scrollbar {
+      display: none
+    }
+
+    .stay {
+      flex: 0 0 360px;
+      scroll-snap-align: start;
+      transition: opacity .4s
+    }
+
+    .stay.hide {
+      display: none
+    }
+
+    .stay .ph {
+      height: 440px;
+      border-radius: var(--r);
+      overflow: hidden;
+      position: relative
+    }
+
+    .stay .ph img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1s
+    }
+
+    .stay:hover .ph img {
+      transform: scale(1.06)
+    }
+
+    .stay .ph .tag {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: rgba(255, 255, 255, .92);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 999px
+    }
+
+    .stay .ph .bk {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      background: var(--orange);
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 999px;
+      padding: 14px;
+      text-align: center;
+      transform: translateY(80px);
+      transition: transform .45s cubic-bezier(.2, .7, .2, 1)
+    }
+
+    .stay:hover .ph .bk {
+      transform: none
+    }
+
+    .stay h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 26px;
+      margin-top: 18px;
+      letter-spacing: -.01em
+    }
+
+    .stay .loc {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 500
+    }
+
+    .prog {
+      height: 2px;
+      background: var(--line);
+      margin-top: 36px;
+      border-radius: 2px;
+      position: relative
+    }
+
+    .prog i {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 20%;
+      background: var(--navy);
+      border-radius: 2px;
+      transition: left .15s
+    }
+
+    .track-ctrl {
+      display: flex;
+      gap: 10px
+    }
+
+    .track-ctrl button {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 1.5px solid var(--navy);
+      display: grid;
+      place-items: center;
+      transition: background .25s, color .25s
+    }
+
+    .track-ctrl button:hover {
+      background: var(--navy);
+      color: #fff
+    }
+
+    /* ---------- manage booking ---------- */
+    .manage {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 70px
+    }
+
+    .mcard {
+      background: #fff;
+      border-radius: 22px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      border: 1px solid var(--line);
+      transition: transform .3s, box-shadow .3s
+    }
+
+    .mcard:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(21, 35, 59, .08)
+    }
+
+    .mcard i {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--sand);
+      color: var(--orange-d)
+    }
+
+    .mcard b {
+      font-size: 16px
+    }
+
+    .mcard span {
+      font-size: 14px;
+      color: var(--muted)
+    }
+
+    /* ---------- packages list ---------- */
+    .pk-list {
+      border-top: 1px solid var(--line);
+      position: relative
+    }
+
+    .pk-row {
+      display: grid;
+      grid-template-columns: 70px 1fr auto 60px;
+      align-items: center;
+      gap: 30px;
+      padding: 30px 0;
+      border-bottom: 1px solid var(--line);
+      transition: padding .4s, color .3s
+    }
+
+    .pk-row:hover {
+      padding-left: 16px;
+      color: var(--orange-d)
+    }
+
+    .pk-row .n {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--muted);
+      font-size: 18px
+    }
+
+    .pk-row h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(28px, 3.6vw, 48px);
+      letter-spacing: -.02em;
+      line-height: 1.05
+    }
+
+    .pk-row .dur {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      padding: 8px 16px;
+      border-radius: 999px
+    }
+
+    .pk-row .ar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      transition: transform .35s, background .3s
+    }
+
+    .pk-row:hover .ar {
+      transform: rotate(-45deg);
+      background: var(--orange);
+      color: var(--ink)
+    }
+
+    .pk-row img.m {
+      display: none
+    }
+
+    .float-img {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 320px;
+      height: 220px;
+      border-radius: 20px;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 40;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(.6) rotate(-6deg);
+      transition: opacity .3s, transform .4s cubic-bezier(.2, .7, .2, 1)
+    }
+
+    .float-img.on {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1) rotate(-4deg)
+    }
+
+    .float-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    /* ---------- facts ---------- */
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 60px
+    }
+
+    .fact {
+      border-radius: var(--r);
+      padding: 34px 30px;
+      color: #fff;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform .4s
+    }
+
+    .fact:hover {
+      transform: translateY(-8px) rotate(-1deg)
+    }
+
+    .fact:nth-child(1) {
+      background: var(--navy)
+    }
+
+    .fact:nth-child(2) {
+      background: var(--green);
+      margin-top: 40px
+    }
+
+    .fact:nth-child(3) {
+      background: var(--maroon)
+    }
+
+    .fact:nth-child(4) {
+      background: var(--purple);
+      margin-top: 40px
+    }
+
+    .fact b {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: 84px;
+      line-height: .9;
+      color: var(--yellow)
+    }
+
+    .fact h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 1.1;
+      margin-bottom: 10px
+    }
+
+    .fact p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, .78)
+    }
+
+    /* ---------- wellness ---------- */
+    .well {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 90px;
+      align-items: center
+    }
+
+    .well-img {
+      position: relative;
+      height: 640px
+    }
+
+    .well-img .arch {
+      position: absolute;
+      inset: 0 18% 0 0;
+      border-radius: 300px 300px var(--r) var(--r);
+      overflow: hidden
+    }
+
+    .well-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .well-img .pill {
+      position: absolute;
+      right: 0;
+      bottom: 60px;
+      background: #fff;
+      border-radius: 22px;
+      padding: 20px 22px;
+      box-shadow: 0 24px 50px rgba(13, 21, 34, .14);
+      max-width: 290px;
+      font-size: 13.5px;
+      color: var(--muted)
+    }
+
+    .well-img .pill b {
+      display: block;
+      color: var(--navy);
+      font-size: 15px;
+      margin-bottom: 4px
+    }
+
+    .well-img .pill a {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--orange-d);
+      font-weight: 700;
+      margin-top: 10px
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid var(--line);
+      margin: 40px 0
+    }
+
+    .benefits div {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      font-weight: 600;
+      font-size: 15px
+    }
+
+    .benefits div:nth-child(odd) {
+      padding-right: 16px
+    }
+
+    .benefits i {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--orange-d);
+      font-size: 15px;
+      width: 24px
+    }
+
+    /* ---------- events timeline ---------- */
+    .events {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid rgba(255, 255, 255, .15);
+      margin-top: 20px
+    }
+
+    .ev {
+      padding: 34px 28px 0 0;
+      position: relative
+    }
+
+    .ev::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--orange);
+      box-shadow: 0 0 0 6px rgba(245, 156, 0, .2)
+    }
+
+    .ev .when {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 22px;
+      color: var(--yellow)
+    }
+
+    .ev .ph {
+      height: 200px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 18px 0
+    }
+
+    .ev .ph img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 1s
+    }
+
+    .ev:hover .ph img {
+      transform: scale(1.07)
+    }
+
+    .ev h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 1.1;
+      margin-bottom: 8px
+    }
+
+    .ev p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, .65)
+    }
+
+    /* ---------- uncharted ---------- */
+    .unch {
+      position: relative;
+      margin: 0 20px;
+      border-radius: 40px;
+      overflow: hidden;
+      min-height: 640px;
+      display: flex;
+      align-items: flex-end;
+      color: #fff
+    }
+
+    .unch img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .unch::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(10deg, rgba(13, 21, 34, .9) 10%, rgba(13, 21, 34, .1) 70%)
+    }
+
+    .unch .wrap {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding-bottom: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 40px;
+      flex-wrap: wrap
+    }
+
+    .unch h2 {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: clamp(42px, 6.4vw, 96px);
+      line-height: .95;
+      letter-spacing: -.03em;
+      max-width: 760px
+    }
+
+    .unch h2 em {
+      color: var(--yellow)
+    }
+
+    .unch p {
+      max-width: 380px;
+      color: rgba(255, 255, 255, .82);
+      margin-bottom: 26px
+    }
+
+    /* ---------- testimonial ---------- */
+    .quote {
+      text-align: center;
+      max-width: 980px;
+      margin: 0 auto
+    }
+
+    .quote .mark {
+      font-family: var(--serif);
+      font-size: 140px;
+      line-height: .6;
+      color: var(--orange);
+      height: 60px
+    }
+
+    .qs {
+      position: relative;
+      min-height: 240px
+    }
+
+    .q {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .7s, transform .7s
+    }
+
+    .q.on {
+      opacity: 1;
+      transform: none;
+      position: relative
+    }
+
+    .q p {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: clamp(24px, 3vw, 40px);
+      line-height: 1.25;
+      letter-spacing: -.01em
+    }
+
+    .q cite {
+      display: block;
+      font-style: normal;
+      margin-top: 28px;
+      font-weight: 700;
+      font-size: 15px
+    }
+
+    .q cite span {
+      display: block;
+      font-weight: 500;
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    .qdots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 34px
+    }
+
+    .qdots button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: all .3s
+    }
+
+    .qdots button.on {
+      background: var(--orange);
+      width: 30px;
+      border-radius: 6px
+    }
+
+    /* ---------- app ---------- */
+    .app {
+      margin: 0 20px;
+      border-radius: 40px;
+      background: var(--navy);
+      color: #fff;
+      overflow: hidden;
+      position: relative
+    }
+
+    .app::before {
+      content: "";
+      position: absolute;
+      right: -180px;
+      top: -180px;
+      width: 620px;
+      height: 620px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 156, 0, .35), transparent 65%)
+    }
+
+    .app .wrap {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      padding-top: 100px
+    }
+
+    .app .h2 em {
+      color: var(--yellow)
+    }
+
+    .app .lead {
+      color: rgba(255, 255, 255, .7);
+      margin-top: 18px
+    }
+
+    .feats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 30px;
+      margin: 34px 0 38px
+    }
+
+    .feats span {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-weight: 600;
+      font-size: 15px
+    }
+
+    .feats span i {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08);
+      display: grid;
+      place-items: center;
+      color: var(--yellow)
+    }
+
+    .stores {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding-bottom: 100px
+    }
+
+    .store {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      color: var(--navy);
+      padding: 12px 22px;
+      border-radius: 16px;
+      transition: transform .25s
+    }
+
+    .store:hover {
+      transform: translateY(-3px)
+    }
+
+    .store small {
+      display: block;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--muted)
+    }
+
+    .store b {
+      font-size: 16px
+    }
+
+    .phone {
+      justify-self: center;
+      align-self: end;
+      width: 310px;
+      height: 560px;
+      background: #000;
+      border-radius: 48px 48px 0 0;
+      padding: 12px 12px 0;
+      box-shadow: 0 -20px 80px rgba(0, 0, 0, .4)
+    }
+
+    .scr {
+      background: var(--paper);
+      border-radius: 38px 38px 0 0;
+      height: 100%;
+      overflow: hidden;
+      color: var(--navy)
+    }
+
+    .scr-top {
+      height: 220px;
+      background: url(https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1231277643.jpg) center/cover;
+      position: relative;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: #fff
+    }
+
+    .scr-top::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(transparent 30%, rgba(0, 0, 0, .65))
+    }
+
+    .scr-top * {
+      position: relative
+    }
+
+    .scr-top small {
+      font-family: var(--hindi);
+      font-size: 14px;
+      color: var(--yellow)
+    }
+
+    .scr-top b {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.1
+    }
+
+    .scr-b {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px
+    }
+
+    .scr-s {
+      background: #fff;
+      border-radius: 14px;
+      padding: 12px 14px;
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .scr-c {
+      display: flex;
+      gap: 6px
+    }
+
+    .scr-c span {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: #fff
+    }
+
+    .scr-c span:first-child {
+      background: var(--navy);
+      color: #fff
+    }
+
+    .scr-k {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background: #fff;
+      border-radius: 16px;
+      padding: 8px
+    }
+
+    .scr-k img {
+      width: 54px;
+      height: 54px;
+      border-radius: 12px;
+      object-fit: cover
+    }
+
+    .scr-k b {
+      font-size: 13px;
+      display: block
+    }
+
+    .scr-k small {
+      font-size: 11px;
+      color: var(--muted)
+    }
+
+    .scr-k em {
+      margin-left: auto;
+      font-style: normal;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #DCFCE7;
+      color: #166534
+    }
+
+    /* ---------- news + faq ---------- */
+    .nf {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 90px
+    }
+
+    .nf h3.t {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 38px;
+      letter-spacing: -.02em;
+      margin-bottom: 24px
+    }
+
+    .news a {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 20px;
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+      transition: padding .3s
+    }
+
+    .news a:hover {
+      padding-left: 10px
+    }
+
+    .news time {
+      font-family: var(--serif);
+      font-size: 36px;
+      line-height: 1;
+      font-weight: 300
+    }
+
+    .news time small {
+      display: block;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      color: var(--orange-d);
+      margin-top: 6px
+    }
+
+    .news h4 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 4px
+    }
+
+    .news p {
+      font-size: 14px;
+      color: var(--muted)
+    }
+
+    .faq details {
+      border-top: 1px solid var(--line);
+      padding: 22px 0
+    }
+
+    .faq details:last-child {
+      border-bottom: 1px solid var(--line)
+    }
+
+    .faq summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-weight: 700;
+      font-size: 16.5px
+    }
+
+    .faq summary::-webkit-details-marker {
+      display: none
+    }
+
+    .faq summary i {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--sand);
+      display: grid;
+      place-items: center;
+      flex: none;
+      transition: transform .35s, background .3s
+    }
+
+    .faq details[open] summary i {
+      transform: rotate(45deg);
+      background: var(--orange)
+    }
+
+    .faq p {
+      padding-top: 12px;
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 540px
+    }
+
+    .note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 14px
+    }
+
+    /* ---------- footer ---------- */
+    .ftr {
+      background: var(--ink);
+      color: #fff;
+      margin-top: 120px;
+      padding: 100px 0 0;
+      overflow: hidden;
+      border-radius: 40px 40px 0 0
+    }
+
+    .nl {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: end;
+      padding-bottom: 70px;
+      border-bottom: 1px solid rgba(255, 255, 255, .12)
+    }
+
+    .nl h2 {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: clamp(34px, 4.4vw, 58px);
+      line-height: 1.02;
+      letter-spacing: -.025em
+    }
+
+    .nl h2 em {
+      color: var(--yellow)
+    }
+
+    .nl form {
+      display: flex;
+      border-bottom: 1.5px solid rgba(255, 255, 255, .4);
+      padding-bottom: 10px;
+      gap: 10px
+    }
+
+    .nl input {
+      flex: 1;
+      min-width: 0;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      color: #fff;
+      font: 500 17px var(--sans)
+    }
+
+    .nl input::placeholder {
+      color: rgba(255, 255, 255, .45)
+    }
+
+    .fcols {
+      display: grid;
+      grid-template-columns: 1.6fr repeat(3, 1fr);
+      gap: 40px;
+      padding: 70px 0 50px
+    }
+
+    .fcols h5 {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 20px
+    }
+
+    .fcols a,
+    .fcols p {
+      display: block;
+      color: rgba(255, 255, 255, .66);
+      font-size: 14.5px;
+      margin-bottom: 12px
+    }
+
+    .fcols a:hover {
+      color: #fff
+    }
+
+    .soc {
+      display: flex;
+      gap: 10px;
+      margin-top: 22px
+    }
+
+    .soc a {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, .2);
+      display: grid;
+      place-items: center;
+      margin: 0;
+      color: #fff
+    }
+
+    .soc a:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: var(--ink)
+    }
+
+    .wordmark {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: 15.2vw;
+      line-height: .8;
+      letter-spacing: -.05em;
+      text-align: center;
+      white-space: nowrap;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, .18);
+      margin-bottom: -2vw;
+      user-select: none
+    }
+
+    .wordmark em {
+      -webkit-text-stroke: 0;
+      color: var(--orange);
+      font-style: italic
+    }
+
+    .legal {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, .45);
+      padding: 24px 0 110px;
+      border-top: 1px solid rgba(255, 255, 255, .12)
+    }
+
+    .legal div {
+      display: flex;
+      gap: 22px
+    }
+
+    /* ---------- dock ---------- */
+    .dock {
+      position: fixed;
+      left: 50%;
+      bottom: 22px;
+      transform: translateX(-50%) translateY(120px);
+      z-index: 60;
+      display: flex;
+      gap: 4px;
+      background: rgba(13, 21, 34, .9);
+      backdrop-filter: blur(14px);
+      border-radius: 999px;
+      padding: 6px;
+      box-shadow: 0 16px 40px rgba(13, 21, 34, .3);
+      transition: transform .5s cubic-bezier(.2, .7, .2, 1)
+    }
+
+    .dock.show {
+      transform: translateX(-50%)
+    }
+
+    .dock a,
+    .dock button {
+      height: 44px;
+      padding: 0 16px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      transition: background .25s
+    }
+
+    .dock a:hover {
+      background: rgba(255, 255, 255, .1)
+    }
+
+    .dock .mid {
+      background: var(--orange);
+      color: var(--ink)
+    }
+
+    .chat {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 60;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--yellow);
+      color: var(--navy);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 14px 30px rgba(13, 21, 34, .2)
+    }
+
+    .chat::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #22C55E;
+      border: 2px solid var(--paper)
+    }
+
+    /* ---------- drawer ---------- */
+    .drawer {
+      position: fixed;
+      inset: 0;
+      z-index: 80;
+      background: var(--ink);
+      color: #fff;
+      padding: 110px 28px 40px;
+      display: flex;
+      flex-direction: column;
+      clip-path: circle(0 at calc(100% - 50px) 50px);
+      transition: clip-path .7s cubic-bezier(.7, 0, .2, 1)
+    }
+
+    .drawer.open {
+      clip-path: circle(150% at calc(100% - 50px) 50px)
+    }
+
+    .drawer a {
+      font-family: var(--serif);
+      font-size: 40px;
+      font-weight: 300;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .08)
+    }
+
+    .drawer a:hover {
+      color: var(--orange);
+      font-style: italic
+    }
+
+    .drawer .x {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      color: #fff;
+      border-color: rgba(255, 255, 255, .3)
+    }
+
+    /* ---------- responsive ---------- */
+    @media (max-width:1100px) {
+      .menu {
+        display: none
+      }
+
+      .burger {
+        display: grid
+      }
+
+      .hdr-tools {
+        margin-left: auto
+      }
+
+      .search {
+        grid-template-columns: 1fr 1fr;
+        border-radius: 28px;
+        padding: 12px;
+        gap: 4px
+      }
+
+      .sf {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        padding: 12px 14px
+      }
+
+      .search .btn {
+        grid-column: span 2;
+        justify-content: center;
+        margin-top: 6px
+      }
+
+      .intro,
+      .well,
+      .nf,
+      .nl,
+      .app .wrap {
+        grid-template-columns: 1fr
+      }
+
+      .intro-img {
+        height: 520px
+      }
+
+      .acc {
+        height: auto;
+        flex-direction: column
+      }
+
+      .pane {
+        flex: none;
+        height: 110px
+      }
+
+      .pane.on {
+        flex: none;
+        height: 440px
+      }
+
+      .pane .vt {
+        writing-mode: horizontal-tb;
+        transform: none;
+        left: 24px;
+        bottom: auto;
+        top: 58px;
+        font-size: 26px
+      }
+
+      .bento {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .manage,
+      .facts {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .fact:nth-child(n) {
+        margin-top: 0
+      }
+
+      .events {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 0
+      }
+
+      .fcols {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .phone {
+        display: none
+      }
+
+      .stores {
+        padding-bottom: 80px
+      }
+
+      .thumbs {
+        display: none
+      }
+    }
+
+    @media (max-width:720px) {
+      .wrap {
+        padding: 0 16px
+      }
+
+      .sec {
+        padding: 80px 0
+      }
+
+      .util {
+        display: none
+      }
+
+      .hdr {
+        top: 0
+      }
+
+      .hdr .wrap {
+        height: 70px;
+        gap: 12px
+      }
+
+      .hdr .btn,
+      .hdr-tools .hide-sm {
+        display: none
+      }
+
+      .brand b {
+        font-size: 20px
+      }
+
+      .brand small {
+        font-size: 8.5px;
+        letter-spacing: .14em;
+        white-space: nowrap
+      }
+
+      .hero {
+        min-height: 620px;
+        height: 92vh
+      }
+
+      .hero-row {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px
+      }
+
+      .search {
+        grid-template-columns: 1fr;
+        margin: -30px 12px 0
+      }
+
+      .search .btn {
+        grid-column: auto
+      }
+
+      .search-links {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        padding: 0 16px
+      }
+
+      .marquee {
+        padding-top: 50px
+      }
+
+      .stats {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .stat b {
+        font-size: 42px
+      }
+
+      .intro-img {
+        height: 420px
+      }
+
+      .badge {
+        width: 110px;
+        height: 110px;
+        left: 0
+      }
+
+      .badge i {
+        font-size: 22px
+      }
+
+      .pane .body {
+        padding: 22px
+      }
+
+      .pane h3 {
+        font-size: 32px
+      }
+
+      .bento {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 240px
+      }
+
+      .tile.w2,
+      .tile.h2r {
+        grid-column: auto;
+        grid-row: auto
+      }
+
+      .tile.h2r h3 {
+        font-size: 32px
+      }
+
+      .track {
+        padding: 0 16px 8px;
+        margin: 0 -16px
+      }
+
+      .stay {
+        flex-basis: 80vw
+      }
+
+      .stay .ph {
+        height: 380px
+      }
+
+      .stay .ph .bk {
+        transform: none
+      }
+
+      .track-ctrl {
+        display: none
+      }
+
+      .manage,
+      .facts,
+      .events,
+      .fcols,
+      .benefits,
+      .feats {
+        grid-template-columns: 1fr
+      }
+
+      .pk-row {
+        grid-template-columns: 1fr auto;
+        gap: 12px
+      }
+
+      .pk-row .n,
+      .pk-row .dur {
+        display: none
+      }
+
+      .pk-row img.m {
+        display: block;
+        grid-column: span 2;
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+        order: -1
+      }
+
+      .pk-row .ar {
+        width: 44px;
+        height: 44px
+      }
+
+      .float-img {
+        display: none
+      }
+
+      .well-img {
+        height: 460px
+      }
+
+      .well-img .arch {
+        inset: 0 8% 0 0
+      }
+
+      .well-img .pill {
+        bottom: 20px
+      }
+
+      .unch,
+      .app {
+        margin: 0 8px;
+        border-radius: 28px
+      }
+
+      .unch {
+        min-height: 560px
+      }
+
+      .ftr {
+        border-radius: 28px 28px 0 0
+      }
+
+      .nl form {
+        flex-direction: column;
+        align-items: stretch
+      }
+
+      .dock span {
+        display: none
+      }
+
+      .dock a,
+      .dock button {
+        padding: 0 14px
+      }
+
+      .chat {
+        bottom: 90px;
+        right: 16px;
+        width: 52px;
+        height: 52px
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      * {
+        animation: none !important;
+        transition: none !important
+      }
+
+      .rv {
+        opacity: 1;
+        transform: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="s" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-3.5-3.5" />
+    </symbol>
+    <symbol id="u" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" />
+    </symbol>
+    <symbol id="m" viewBox="0 0 24 24">
+      <path d="M4 8h16M4 16h16" />
+    </symbol>
+    <symbol id="p" viewBox="0 0 24 24">
+      <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" />
+      <circle cx="12" cy="9.5" r="2.5" />
+    </symbol>
+    <symbol id="l" viewBox="0 0 24 24">
+      <path d="M19 12H5m6-6-6 6 6 6" />
+    </symbol>
+    <symbol id="r" viewBox="0 0 24 24">
+      <path d="M5 12h14m-6-6 6 6-6 6" />
+    </symbol>
+    <symbol id="a" viewBox="0 0 24 24">
+      <path d="M7 17 17 7M8 7h9v9" />
+    </symbol>
+    <symbol id="map" viewBox="0 0 24 24">
+      <path d="m9 4-6 2v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14m6-12v14" />
+    </symbol>
+    <symbol id="cal" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="16" rx="2" />
+      <path d="M3 10h18M8 3v4m8-4v4" />
+    </symbol>
+    <symbol id="bed" viewBox="0 0 24 24">
+      <path d="M3 18V6m0 8h18v4m0-4v-2a3 3 0 0 0-3-3h-7v5" />
+      <circle cx="7" cy="11" r="2" />
+    </symbol>
+    <symbol id="sh" viewBox="0 0 24 24">
+      <path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z" />
+      <path d="m9 12 2 2 4-4" />
+    </symbol>
+    <symbol id="bell" viewBox="0 0 24 24">
+      <path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4z" />
+      <path d="M10 21h4" />
+    </symbol>
+    <symbol id="card" viewBox="0 0 24 24">
+      <rect x="2" y="5" width="20" height="14" rx="2" />
+      <path d="M2 10h20M6 15h4" />
+    </symbol>
+    <symbol id="hist" viewBox="0 0 24 24">
+      <path d="M3 12a9 9 0 1 0 3-6.7L3 8" />
+      <path d="M3 3v5h5M12 7v5l3 2" />
+    </symbol>
+    <symbol id="x" viewBox="0 0 24 24">
+      <path d="M5 5l14 14M19 5 5 19" />
+    </symbol>
+    <symbol id="plus" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12h14" />
+    </symbol>
+    <symbol id="ph" viewBox="0 0 24 24">
+      <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" />
+    </symbol>
+    <symbol id="chat" viewBox="0 0 24 24">
+      <path d="M4 5h16v11H9l-5 4z" />
+    </symbol>
+    <symbol id="play" viewBox="0 0 24 24">
+      <path d="M6 4l14 8-14 8z" />
+    </symbol>
+    <symbol id="apple" viewBox="0 0 24 24">
+      <path
+        d="M16 3c0 2-1.5 3.5-3.4 3.4C12.5 4.5 14 3 16 3zM18.5 16.5c-.8 1.8-2 3.5-3.4 3.5-1.3 0-1.7-.8-3.2-.8s-2 .8-3.2.8C6.6 20 4 16 4 12.4 4 9.5 5.9 8 7.7 8c1.3 0 2.3.8 3.1.8.8 0 2-.9 3.5-.9.6 0 2.4.1 3.6 1.8-3 1.8-2.4 5.9.6 6.8z" />
+    </symbol>
+    <symbol id="fb" viewBox="0 0 24 24">
+      <path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" />
+    </symbol>
+    <symbol id="ig" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <path d="M17.5 6.5h.01" />
+    </symbol>
+    <symbol id="yt" viewBox="0 0 24 24">
+      <rect x="2" y="5" width="20" height="14" rx="4" />
+      <path d="m10 9 5 3-5 3z" />
+    </symbol>
+  </svg>
+
+  <!-- ===== HEADER ===== -->
+  <div class="util">
+    <div class="wrap">
+      <div><a href="#"><span class="hi">मध्य प्रदेश पर्यटन</span></a><span>Official website of MPSTDC</span></div>
+      <div><a href="#">News</a><a href="#">Tenders</a><a href="#">Contact</a><a href="#"
+          aria-label="Switch language">English / <span class="hi">हिंदी</span></a></div>
+    </div>
+  </div>
+  <header class="hdr" id="hdr">
+    <div class="wrap">
+      <a href="#" class="brand" aria-label="MP Tourism home"><span class="brand-mark"><img
+            src="./assets/logo.png"></span><span><b>MP Tourism</b><small>Heart of Incredible India</small></span></a>
+      <nav class="menu" aria-label="Main">
+        <a href="#discover">Destinations</a>
+        <a href="#stays">Stays</a>
+        <a href="#packages">Packages</a>
+        <a href="#wellness">Wellness</a>
+        <a href="#events">Events</a>
+        <a href="#app">Plan Your Trip</a>
+      </nav>
+      <div class="hdr-tools">
+        <button class="ib hide-sm" aria-label="Search"><svg class="i">
+            <use href="#s" />
+          </svg></button>
+        <a href="#" class="ib" aria-label="Login or register"><svg class="i">
+            <use href="#u" />
+          </svg></a>
+        <a href="#book" class="btn btn-o">Book a Stay</a>
+        <button class="ib burger" id="burger" aria-label="Open menu"><svg class="i">
+            <use href="#m" />
+          </svg></button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="drawer" id="drawer" aria-label="Mobile">
+    <button class="ib x" id="drawerX" aria-label="Close menu"><svg class="i">
+        <use href="#x" />
+      </svg></button>
+    <a href="#discover">Destinations</a><a href="#stays">Stays</a><a href="#packages">Packages</a>
+    <a href="#wellness">Wellness</a><a href="#events">Events</a><a href="#app">Plan Your Trip</a>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="Featured destinations">
+    <div class="slide on"
+      style="background-image:url(https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/541687614.jpg)"></div>
+    <div class="slide" style="background-image:url(https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1785158838.jpg)">
+    </div>
+    <div class="slide" style="background-image:url(https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1231277643.jpg)">
+    </div>
+    <div class="slide" style="background-image:url(https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/2370028976.jpg)">
+    </div>
+    <div class="hero-in">
+      <div class="wrap">
+        <div class="hero-hi">हिंदुस्तान का दिल देखो</div>
+        <h1>The <em>heart</em> of<br>Incredible India</h1>
+        <div class="hero-row">
+          <p>Tigers in the sal forests, temples carved a thousand years ago, and waterfalls that roar after the monsoon
+            – all at the centre of India.</p>
+          <div class="thumbs" id="thumbs">
+            <button class="thumb on"><span></span>Pachmarhi</button>
+            <button class="thumb"><span></span>Khajuraho</button>
+            <button class="thumb"><span></span>Gwalior Fort</button>
+            <button class="thumb"><span></span>Dhuandhar Falls</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- booking search -->
+  <form class="search rv" id="book" onsubmit="return false" aria-label="Search MP Tourism hotels and resorts">
+    <div class="sf"><label for="dest">Destination</label>
+      <select id="dest">
+        <option>Where are you going?</option>
+        <option>Bhopal</option>
+        <option>Pachmarhi</option>
+        <option>Khajuraho</option>
+        <option>Orchha</option>
+        <option>Omkareshwar</option>
+        <option>Ujjain</option>
+        <option>Chanderi</option>
+        <option>Bargi</option>
+        <option>Satna</option>
+        <option>Jhabua</option>
+        <option>Kanha</option>
+      </select>
+    </div>
+    <div class="sf"><label for="cin">Check in</label><input type="date" id="cin"></div>
+    <div class="sf"><label for="cout">Check out</label><input type="date" id="cout"></div>
+    <div class="sf"><label>Guests</label><button type="button" class="val" id="gBtn">2 adults · 1 room</button>
+      <div class="guests" id="guests">
+        <div class="gr">
+          <div><b>Adults</b><small>Age 13+</small></div>
+          <div><button type="button" data-g="a:-1" aria-label="Fewer adults">−</button><span data-v="a">2</span><button
+              type="button" data-g="a:1" aria-label="More adults">+</button></div>
+        </div>
+        <div class="gr">
+          <div><b>Children</b><small>Age 0–12</small></div>
+          <div><button type="button" data-g="c:-1" aria-label="Fewer children">−</button><span
+              data-v="c">0</span><button type="button" data-g="c:1" aria-label="More children">+</button></div>
+        </div>
+        <div class="gr">
+          <div><b>Rooms</b></div>
+          <div><button type="button" data-g="r:-1" aria-label="Fewer rooms">−</button><span data-v="r">1</span><button
+              type="button" data-g="r:1" aria-label="More rooms">+</button></div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-o" type="submit"><svg class="i">
+        <use href="#s" />
+      </svg>Check availability</button>
+  </form>
+  <div class="search-links">
+    <a href="#"><svg class="i">
+        <use href="#hist" />
+      </svg>My bookings</a>
+    <a href="#"><svg class="i">
+        <use href="#x" />
+      </svg>Cancel a booking</a>
+    <a href="#"><svg class="i">
+        <use href="#sh" />
+      </svg>Secure payment</a>
+    <a href="#"><svg class="i">
+        <use href="#ph" />
+      </svg>Help &amp; support</a>
+  </div>
+
+  <!-- marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="mq">
+      <span>Khajuraho</span><span>Pachmarhi</span><span>Ujjain</span><span>Kanha</span><span>Orchha</span><span>Gwalior</span><span>Sanchi</span><span>Omkareshwar</span><span>Bhedaghat</span><span>Mandu</span>
+      <span>Khajuraho</span><span>Pachmarhi</span><span>Ujjain</span><span>Kanha</span><span>Orchha</span><span>Gwalior</span><span>Sanchi</span><span>Omkareshwar</span><span>Bhedaghat</span><span>Mandu</span>
+    </div>
+  </div>
+
+  <!-- ===== INTRO ===== -->
+  <section class="sec">
+    <div class="wrap intro">
+      <div class="intro-txt rv">
+        <span class="kicker">Welcome to Madhya Pradesh</span>
+        <h2 class="h2">A land of <em>stories</em>, carved in stone</h2>
+        <p class="big" style="margin-top:30px">Ancient temples, roaring tigers, sacred rivers and royal forts – <em>all
+            within easy reach.</em></p>
+        <div class="stats" id="stats">
+          <div class="stat"><b data-count="3">0</b><span>UNESCO World Heritage Sites</span></div>
+          <div class="stat"><b data-count="2">0</b><span>Of India's 12 Jyotirlingas</span></div>
+          <div class="stat"><b>#<i data-count="1" style="font-style:normal">0</i></b><span>Tiger State of India</span>
+          </div>
+          <div class="stat"><b data-count="1">0</b><span>Diamond mine – at Panna</span></div>
+        </div>
+      </div>
+      <div class="intro-img rv d2">
+        <div class="badge"><svg viewBox="0 0 150 150">
+            <defs>
+              <path id="circ" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0" />
+            </defs><text>
+              <textPath href="#circ">DEKHO APNA DESH • HEART OF INDIA •</textPath>
+            </text>
+          </svg><i>दिल</i></div>
+        <div class="a"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1785158838.jpg"
+            alt="Khajuraho temple" loading="lazy"></div>
+        <div class="b"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1026430198.jpg" alt="Sanchi Stupa"
+            loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCES ===== -->
+  <section class="sec dark" id="discover">
+    <div class="wrap">
+      <div class="top-row rv">
+        <div><span class="kicker">Find your journey</span>
+          <h2 class="h2">Five ways to <em>feel</em> MP</h2>
+        </div>
+        <p class="lead">Choose what moves you – and we'll show you where to go, where to stay and when to visit.</p>
+      </div>
+      <div class="acc rv" id="acc">
+        <div class="pane on"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1785158838.jpg"
+            alt="Khajuraho temples" loading="lazy"><span class="num">01</span><span class="vt">Heritage</span>
+          <div class="body">
+            <h3>Heritage</h3>
+            <p>Chandela temples, Bundela palaces and hilltop forts that have watched over central India for a thousand
+              years.</p>
+            <div class="chips"><a href="#">Khajuraho</a><a href="#">Gwalior</a><a href="#">Orchha</a><a
+                href="#">Sanchi</a><a href="#">Chanderi</a></div>
+          </div>
+        </div>
+        <div class="pane"><img src="https://mpstdc.com/assets/attraction2.d29b40b2.png" alt="Deer at Kanha"
+            loading="lazy"><span class="num">02</span><span class="vt">Wildlife</span>
+          <div class="body">
+            <h3>Wildlife</h3>
+            <p>India's Tiger State – Kanha is home to the barasingha and over 1,000 species of flowering plants.</p>
+            <div class="chips"><a href="#">Kanha</a><a href="#">Bandhavgarh</a><a href="#">Pench</a><a
+                href="#">Satpura</a><a href="#">Panna</a></div>
+          </div>
+        </div>
+        <div class="pane"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/3347199567.png"
+            alt="Omkareshwar" loading="lazy"><span class="num">03</span><span class="vt">Spiritual</span>
+          <div class="body">
+            <h3>Spiritual</h3>
+            <p>Mahakaleshwar in Ujjain, the island shrine of Omkareshwar and the ghats of the holy Narmada.</p>
+            <div class="chips"><a href="#">Ujjain</a><a href="#">Omkareshwar</a><a href="#">Maheshwar</a><a
+                href="#">Amarkantak</a></div>
+          </div>
+        </div>
+        <div class="pane"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/541687614.jpg" alt="Pachmarhi"
+            loading="lazy"><span class="num">04</span><span class="vt">Nature</span>
+          <div class="body">
+            <h3>Nature &amp; Adventure</h3>
+            <p>Pachmarhi's waterfalls – Apsara Vihar and the single-drop Silver Fall – river treks and lakeside cruises.
+            </p>
+            <div class="chips"><a href="#">Pachmarhi</a><a href="#">Bhedaghat</a><a href="#">Bargi</a><a
+                href="#">Hanuwantiya</a></div>
+          </div>
+        </div>
+        <div class="pane"><img src="https://mpstdc.com/assets/yogabg.7ac08840.jpg" alt="Yoga" loading="lazy"><span
+            class="num">05</span><span class="vt">Wellness</span>
+          <div class="body">
+            <h3>Wellness</h3>
+            <p>Ayurveda, yoga and clinically customised therapies to relax, refresh and rejuvenate.</p>
+            <div class="chips"><a href="#wellness">Dhanwantri Wellness Centre</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESTINATIONS ===== -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="top-row rv">
+        <div><span class="kicker">Top destinations</span>
+          <h2 class="h2">Don't miss these <em>must-see</em> places</h2>
+        </div>
+        <a href="#" class="btn btn-line">All destinations <span class="ar"><svg class="i">
+              <use href="#a" />
+            </svg></span></a>
+      </div>
+      <div class="bento">
+        <a class="tile w2 h2r rv" href="#"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1785158838.jpg"
+            alt="Khajuraho" loading="lazy"><span class="tag">UNESCO</span><span class="go"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+          <h3>Khajuraho</h3>
+          <p>Temples of art, devotion and love</p>
+        </a>
+        <a class="tile rv d1" href="#"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/541687614.jpg"
+            alt="Pachmarhi" loading="lazy"><span class="go"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+          <h3>Pachmarhi</h3>
+          <p>Queen of Satpura</p>
+        </a>
+        <a class="tile rv d2" href="#"><img src="https://mpstdc.com/assets/attraction1.7c385e7f.png" alt="Ujjain"
+            loading="lazy" style="background:#b8692b"><span class="go"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+          <h3>Ujjain</h3>
+          <p>City on the Kshipra</p>
+        </a>
+        <a class="tile w2 rv d1" href="#"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1231277643.jpg"
+            alt="Gwalior Fort" loading="lazy"><span class="go"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+          <h3>Gwalior</h3>
+          <p>The fort city of Tansen</p>
+        </a>
+        <a class="tile rv" href="#"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1026430198.jpg"
+            alt="Sanchi" loading="lazy"><span class="tag">UNESCO</span><span class="go"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+          <h3>Sanchi</h3>
+          <p>The Great Stupa</p>
+        </a>
+        <a class="tile rv d1" href="#"><img src="https://mpstdc.com/assets/attraction2.d29b40b2.png" alt="Kanha"
+            loading="lazy"><span class="go"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+          <h3>Kanha</h3>
+          <p>Tiger reserve</p>
+        </a>
+        <a class="tile w2 rv d2" href="#"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/2370028976.jpg"
+            alt="Dhuandhar Falls, Jabalpur" loading="lazy"><span class="go"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+          <h3>Jabalpur &amp; Bhedaghat</h3>
+          <p>Marble rocks and the smoke cascade of Dhuandhar</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STAYS ===== -->
+  <section class="sec" id="stays" style="background:var(--sand)">
+    <div class="wrap">
+      <div class="stays-head rv">
+        <div><span class="kicker">Hotels &amp; Resorts</span>
+          <h2 class="h2">Stay with <em>MP Tourism</em></h2>
+        </div>
+        <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+          <div class="filters" id="filters"><button class="on" data-f="all">All</button><button
+              data-f="heritage">Heritage</button><button data-f="nature">Nature</button><button
+              data-f="city">City</button><button data-f="pilgrim">Pilgrim</button></div>
+          <div class="track-ctrl"><button id="tPrev" aria-label="Previous"><svg class="i">
+                <use href="#l" />
+              </svg></button><button id="tNext" aria-label="Next"><svg class="i">
+                <use href="#r" />
+              </svg></button></div>
+        </div>
+      </div>
+      <div class="track" id="track">
+        <article class="stay" data-k="pilgrim">
+          <div class="ph"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/3347199567.png"
+              alt="MPT Temple View" loading="lazy"><span class="tag">Pilgrim favourite</span><a href="#book"
+              class="bk">Check availability</a></div>
+          <h3>MPT Temple View</h3>
+          <p class="loc"><svg class="i">
+              <use href="#p" />
+            </svg>Omkareshwar</p>
+        </article>
+        <article class="stay" data-k="heritage">
+          <div class="ph"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1520235847.png"
+              alt="MPT Betwa Retreat" loading="lazy"><span class="tag">Heritage</span><a href="#book" class="bk">Check
+              availability</a></div>
+          <h3>MPT Betwa Retreat</h3>
+          <p class="loc"><svg class="i">
+              <use href="#p" />
+            </svg>Orchha</p>
+        </article>
+        <article class="stay" data-k="nature">
+          <div class="ph"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/4266865881.png"
+              alt="MPT Maikal Resort" loading="lazy"><span class="tag">Lakeside</span><a href="#book" class="bk">Check
+              availability</a></div>
+          <h3>MPT Maikal Resort</h3>
+          <p class="loc"><svg class="i">
+              <use href="#p" />
+            </svg>Bargi</p>
+        </article>
+        <article class="stay" data-k="city">
+          <div class="ph"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/3705769672.png"
+              alt="MPT Palash Residency" loading="lazy"><span class="tag">City</span><a href="#book" class="bk">Check
+              availability</a></div>
+          <h3>MPT Palash Residency</h3>
+          <p class="loc"><svg class="i">
+              <use href="#p" />
+            </svg>Bhopal</p>
+        </article>
+        <article class="stay" data-k="nature">
+          <div class="ph"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/3108317146.jpg"
+              alt="MPT Highlands" loading="lazy"><span class="tag">Hill station</span><a href="#book" class="bk">Check
+              availability</a></div>
+          <h3>MPT Highlands</h3>
+          <p class="loc"><svg class="i">
+              <use href="#p" />
+            </svg>Pachmarhi</p>
+        </article>
+        <article class="stay" data-k="heritage">
+          <div class="ph"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/3557084140.jpg"
+              alt="MPT Kila Kothi" loading="lazy"><span class="tag">Heritage</span><a href="#book" class="bk">Check
+              availability</a></div>
+          <h3>MPT Kila Kothi</h3>
+          <p class="loc"><svg class="i">
+              <use href="#p" />
+            </svg>Chanderi</p>
+        </article>
+        <article class="stay" data-k="city">
+          <div class="ph"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/4111704077.png"
+              alt="MPT Bharhut" loading="lazy"><span class="tag">City</span><a href="#book" class="bk">Check
+              availability</a></div>
+          <h3>MPT Bharhut</h3>
+          <p class="loc"><svg class="i">
+              <use href="#p" />
+            </svg>Satna</p>
+        </article>
+      </div>
+      <div class="prog"><i id="progBar"></i></div>
+
+      <div class="manage">
+        <a class="mcard rv" href="#"><i><svg class="i">
+              <use href="#hist" />
+            </svg></i><b>Booking history</b><span>See every past and upcoming stay in one place.</span></a>
+        <a class="mcard rv d1" href="#"><i><svg class="i">
+              <use href="#x" />
+            </svg></i><b>Cancel a booking</b><span>Cancel online; refunds follow MPSTDC policy.</span></a>
+        <a class="mcard rv d2" href="#"><i><svg class="i">
+              <use href="#card" />
+            </svg></i><b>Payment status</b><span>Track transactions made through the secure gateway.</span></a>
+        <a class="mcard rv d3" href="#"><i><svg class="i">
+              <use href="#bell" />
+            </svg></i><b>Instant alerts</b><span>Confirmation by email and SMS the moment you book.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PACKAGES ===== -->
+  <section class="sec" id="packages">
+    <div class="wrap">
+      <div class="top-row rv">
+        <div><span class="kicker">Premium packages</span>
+          <h2 class="h2">Curated tours, <em>handled</em> end to end</h2>
+        </div>
+        <p class="lead">Stays, transfers and sightseeing planned by MP Tourism – just pick your journey.</p>
+      </div>
+      <div class="pk-list" id="pkList">
+        <a class="pk-row rv" href="#" data-img="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1785158838.jpg"><img
+            class="m" src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1785158838.jpg" alt=""
+            loading="lazy"><span class="n">01</span>
+          <h3>Artistic Khajuraho</h3><span class="dur">5 Days / 4 Nights</span><span class="ar"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+        </a>
+        <a class="pk-row rv" href="#" data-img="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1231277643.jpg"><img
+            class="m" src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1231277643.jpg" alt=""
+            loading="lazy"><span class="n">02</span>
+          <h3>Dynasty-rich Gwalior</h3><span class="dur">6 Days / 5 Nights</span><span class="ar"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+        </a>
+        <a class="pk-row rv" href="#" data-img="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/541687614.jpg"><img
+            class="m" src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/541687614.jpg" alt=""
+            loading="lazy"><span class="n">03</span>
+          <h3>Nature's Nest Pachmarhi</h3><span class="dur">5 Days / 4 Nights</span><span class="ar"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+        </a>
+        <a class="pk-row rv" href="#" data-img="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1026430198.jpg"><img
+            class="m" src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1026430198.jpg" alt=""
+            loading="lazy"><span class="n">04</span>
+          <h3>Royal City Bhopal</h3><span class="dur">5 Days / 4 Nights</span><span class="ar"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+        </a>
+        <a class="pk-row rv" href="#" data-img="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/2370028976.jpg"><img
+            class="m" src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/2370028976.jpg" alt=""
+            loading="lazy"><span class="n">05</span>
+          <h3>Culture-rich Jabalpur</h3><span class="dur">6 Days / 5 Nights</span><span class="ar"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+        </a>
+        <a class="pk-row rv" href="#" data-img="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/3705769672.png"><img
+            class="m" src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/3705769672.png" alt=""
+            loading="lazy"><span class="n">06</span>
+          <h3>Classical Indore</h3><span class="dur">5 Days / 4 Nights</span><span class="ar"><svg class="i">
+              <use href="#a" />
+            </svg></span>
+        </a>
+      </div>
+    </div>
+    <div class="float-img" id="floatImg"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1785158838.jpg"
+        alt=""></div>
+  </section>
+
+  <!-- ===== FACTS ===== -->
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="top-row rv" style="margin-bottom:0">
+        <div><span class="kicker">Did you know?</span>
+          <h2 class="h2">A few <em>awesome</em> facts</h2>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="fact rv"><b>#1</b>
+          <div>
+            <h3>The Tiger State of India</h3>
+            <p>The country's largest tiger population roams Kanha, Bandhavgarh, Pench and Satpura.</p>
+          </div>
+        </div>
+        <div class="fact rv d1"><b>3</b>
+          <div>
+            <h3>UNESCO World Heritage Sites</h3>
+            <p>Khajuraho, the Buddhist monuments at Sanchi and the rock shelters of Bhimbetka.</p>
+          </div>
+        </div>
+        <div class="fact rv d2"><b>2</b>
+          <div>
+            <h3>Of the 12 Jyotirlingas</h3>
+            <p>Mahakaleshwar in Ujjain and Omkareshwar on the Narmada.</p>
+          </div>
+        </div>
+        <div class="fact rv d3"><b>♦</b>
+          <div>
+            <h3>India's Diamond State</h3>
+            <p>Panna is home to India's only active diamond mine – and a tiger reserve too.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WELLNESS ===== -->
+  <section class="sec" id="wellness" style="background:#fff">
+    <div class="wrap well">
+      <div class="well-img rv">
+        <div class="arch"><img src="https://mpstdc.com/assets/yogabg.7ac08840.jpg" alt="Yoga at sunrise" loading="lazy">
+        </div>
+        <div class="pill"><b>Dhanwantri Wellness Centre</b>MPT Samrat Vikramaditya The Heritage<br><a
+            href="tel:07342991245"><svg class="i">
+              <use href="#ph" />
+            </svg>07342991245</a></div>
+      </div>
+      <div class="rv d1">
+        <span class="kicker">Wellness tourism</span>
+        <h2 class="h2">Relax. Refresh. <em>Rejuvenate.</em></h2>
+        <p class="lead" style="margin-top:20px">A health retreat is a place to focus on your physical, mental and
+          emotional health – guided by traditional therapies in serene settings.</p>
+        <div class="benefits">
+          <div><i>i.</i>Pain-free life</div>
+          <div><i>ii.</i>Cleansing, balancing, healing</div>
+          <div><i>iii.</i>Clinically customised treatments</div>
+          <div><i>iv.</i>Live a stress-free life</div>
+          <div><i>v.</i>Refresh the soul</div>
+          <div><i>vi.</i>Soundarya</div>
+        </div>
+        <a href="#" class="btn btn-n">Explore wellness <span class="ar" style="background:rgba(255,255,255,.12)"><svg
+              class="i">
+              <use href="#a" />
+            </svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EVENTS ===== -->
+  <section class="sec dark" id="events">
+    <div class="wrap">
+      <div class="top-row rv">
+        <div><span class="kicker">Festivals &amp; events</span>
+          <h2 class="h2">Celebrate with <em>Madhya Pradesh</em></h2>
+        </div>
+        <a href="#" class="btn btn-o">Events calendar <span class="ar"><svg class="i">
+              <use href="#cal" />
+            </svg></span></a>
+      </div>
+      <div class="events">
+        <article class="ev rv"><span class="when">Winter season</span>
+          <div class="ph"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/3108317146.jpg"
+              alt="Hanuwantiya" loading="lazy"></div>
+          <h3>Jal Mahotsav</h3>
+          <p>Tent city, water sports and hot-air balloons at Hanuwantiya.</p>
+        </article>
+        <article class="ev rv d1"><span class="when">December</span>
+          <div class="ph"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1231277643.jpg" alt="Gwalior"
+              loading="lazy"></div>
+          <h3>Tansen Samaroh</h3>
+          <p>Gwalior's tribute to the legendary musician – Hindustani music under the stars.</p>
+        </article>
+        <article class="ev rv d2"><span class="when">February</span>
+          <div class="ph"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1785158838.jpg" alt="Khajuraho"
+              loading="lazy"></div>
+          <h3>Khajuraho Dance Festival</h3>
+          <p>Classical dance against the floodlit western group of temples.</p>
+        </article>
+        <article class="ev rv d3"><span class="when">2028</span>
+          <div class="ph"><img src="https://mpstdc.com/assets/attraction1.7c385e7f.png" alt="Ujjain" loading="lazy"
+              style="background:#b8692b"></div>
+          <h3>Simhastha, Ujjain</h3>
+          <p>The great Kumbh on the banks of the Kshipra – plan your stay early.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== UNCHARTED ===== -->
+  <section class="sec" style="padding-bottom:0">
+    <div class="unch rv">
+      <img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/2346398935.png"
+        alt="Travellers crossing a stream at Parsili" loading="lazy">
+      <div class="wrap">
+        <h2>The <em>uncharted</em> avenues</h2>
+        <div>
+          <p>Hidden gems tucked away in remote corners or hidden within bustling cities – the thrill of finding them is
+            what travel is all about.</p><a href="#" class="btn btn-o">Let's discover <span class="ar"><svg class="i">
+                <use href="#a" />
+              </svg></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="sec">
+    <div class="wrap quote rv">
+      <span class="kicker">Hear from our guests</span>
+      <div class="mark" style="margin-top:30px">“</div>
+      <div class="qs" id="qs">
+        <div class="q on">
+          <p>I really did not expect such a wonderful experience. Everything was exceptional, with very supportive staff
+            – Champak Bungalow rocks.</p><cite>Guest review<span>MPT Champak Bungalow</span></cite>
+        </div>
+        <div class="q">
+          <p>Excellent stay. We had an excellent trip with wonderful food and attentive service.</p><cite>Guest
+            review<span>Kutni Island Resort</span></cite>
+        </div>
+        <div class="q">
+          <p>Booking online was simple and the confirmation arrived instantly. A peaceful stay right by the temples.</p>
+          <cite>Sample review<span>Placeholder – replace with CMS content</span></cite>
+        </div>
+      </div>
+      <div class="qdots" id="qdots"></div>
+    </div>
+  </section>
+
+  <!-- ===== APP ===== -->
+  <section class="app" id="app">
+    <div class="wrap">
+      <div class="rv">
+        <span class="kicker">MP Tourism app</span>
+        <h2 class="h2">Madhya Pradesh, <em>in your pocket</em></h2>
+        <p class="lead">Discover destinations, book MP Tourism stays, pay securely and manage every reservation – on
+          Android and iOS.</p>
+        <div class="feats">
+          <span><i><svg class="i">
+                <use href="#bed" />
+              </svg></i>Hotel &amp; resort booking</span>
+          <span><i><svg class="i">
+                <use href="#card" />
+              </svg></i>Secure online payments</span>
+          <span><i><svg class="i">
+                <use href="#hist" />
+              </svg></i>Booking history</span>
+          <span><i><svg class="i">
+                <use href="#bell" />
+              </svg></i>Push notifications</span>
+          <span><i><svg class="i">
+                <use href="#map" />
+              </svg></i>Tourist information</span>
+          <span><i><svg class="i">
+                <use href="#u" />
+              </svg></i>Profile &amp; support</span>
+        </div>
+        <div class="stores">
+          <a href="#" class="store"><svg class="i" style="width:26px;height:26px">
+              <use href="#play" />
+            </svg><span><small>GET IT ON</small><b>Google Play</b></span></a>
+          <a href="#" class="store"><svg class="i" style="width:26px;height:26px">
+              <use href="#apple" />
+            </svg><span><small>Download on the</small><b>App Store</b></span></a>
+        </div>
+      </div>
+      <div class="phone" aria-hidden="true">
+        <div class="scr">
+          <div class="scr-top"><small>नमस्ते, Traveller</small><b>Where would you like to go?</b></div>
+          <div class="scr-b">
+            <div class="scr-s"><svg class="i" style="width:15px;height:15px">
+                <use href="#s" />
+              </svg>Search hotels, destinations…</div>
+            <div class="scr-c"><span>Stays</span><span>Packages</span><span>Events</span></div>
+            <div class="scr-k"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/1520235847.png" alt="">
+              <div><b>MPT Betwa Retreat</b><small>Orchha · 2 nights</small></div><em>Confirmed</em>
+            </div>
+            <div class="scr-k"><img src="https://d31nz8gnrv0rol.cloudfront.net/mp-cms-images/3108317146.jpg" alt="">
+              <div><b>MPT Highlands</b><small>Pachmarhi · 3 nights</small></div><em
+                style="background:#FEF3C7;color:#92400E">Upcoming</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS + FAQ ===== -->
+  <section class="sec">
+    <div class="wrap nf">
+      <div class="news rv">
+        <h3 class="t">News &amp; announcements</h3>
+        <a href="#"><time>12<small>OCT</small></time>
+          <div>
+            <h4>Online booking now live for all MPT properties</h4>
+            <p>Book, pay and manage reservations on the website and app.</p>
+          </div>
+        </a>
+        <a href="#"><time>28<small>SEP</small></time>
+          <div>
+            <h4>Winter season packages announced</h4>
+            <p>New itineraries for Khajuraho, Orchha and Pachmarhi.</p>
+          </div>
+        </a>
+        <a href="#"><time>15<small>SEP</small></time>
+          <div>
+            <h4>Photo &amp; video gallery refreshed</h4>
+            <p>New galleries from across Madhya Pradesh.</p>
+          </div>
+        </a>
+        <p class="note">Sample announcements – to be managed via the CMS.</p>
+      </div>
+      <div class="faq rv d1">
+        <h3 class="t">Frequently asked</h3>
+        <details open>
+          <summary>How do I book an MP Tourism hotel or resort?<i><svg class="i" style="width:14px;height:14px">
+                <use href="#plus" />
+              </svg></i></summary>
+          <p>Pick a destination, dates and guests in the search bar, choose your room and pay securely online.
+            Confirmation is sent instantly by email and SMS.</p>
+        </details>
+        <details>
+          <summary>Can I cancel or modify my booking?<i><svg class="i" style="width:14px;height:14px">
+                <use href="#plus" />
+              </svg></i></summary>
+          <p>Yes. Sign in and open My Bookings to cancel. Refunds follow the MPSTDC cancellation policy and go back to
+            the original payment method.</p>
+        </details>
+        <details>
+          <summary>Which payment methods are accepted?<i><svg class="i" style="width:14px;height:14px">
+                <use href="#plus" />
+              </svg></i></summary>
+          <p>All payments run through an SSL-secured payment gateway supporting cards, UPI and net banking.</p>
+        </details>
+        <details>
+          <summary>Where can I see my past bookings?<i><svg class="i" style="width:14px;height:14px">
+                <use href="#plus" />
+              </svg></i></summary>
+          <p>Your full booking history is in your profile on the website and in the MP Tourism app.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="nl">
+        <h2>Stories, offers &amp; festivals – <em>straight to your inbox</em></h2>
+        <form onsubmit="this.querySelector('button').textContent='Subscribed ✓';return false"><input type="email"
+            placeholder="Your email address" aria-label="Email address" required><button class="btn btn-o"
+            type="submit">Subscribe</button></form>
+      </div>
+      <div class="fcols">
+        <div>
+          <a href="#" class="brand" style="margin-bottom:20px"><span class="brand-mark">mp</span><span><b>MP
+                Tourism</b><small>Heart of Incredible India</small></span></a>
+          <p>Madhya Pradesh State Tourism Development Corporation Ltd.<br>Paryatan Bhawan, Bhadbhada Road, Bhopal –
+            462003</p>
+          <div class="soc"><a href="#" aria-label="Facebook"><svg class="i">
+                <use href="#fb" />
+              </svg></a><a href="#" aria-label="Instagram"><svg class="i">
+                <use href="#ig" />
+              </svg></a><a href="#" aria-label="X"><svg class="i">
+                <use href="#x" />
+              </svg></a><a href="#" aria-label="YouTube"><svg class="i">
+                <use href="#yt" />
+              </svg></a></div>
+        </div>
+        <div>
+          <h5>Explore</h5><a href="#discover">Destinations</a><a href="#packages">Tour packages</a><a
+            href="#events">Festivals &amp; events</a><a href="#wellness">Wellness</a><a href="#">Photo &amp; video
+            gallery</a>
+        </div>
+        <div>
+          <h5>Bookings</h5><a href="#book">Book a stay</a><a href="#">My bookings</a><a href="#">Cancel booking</a><a
+            href="#">Cancellation &amp; refund policy</a><a href="#">Login / Register</a>
+        </div>
+        <div>
+          <h5>Help</h5><a href="#">Contact us</a><a href="#">FAQs</a><a href="#">News</a><a href="#">Tenders</a><a
+            href="#">RTI</a>
+        </div>
+      </div>
+      <div class="legal"><span>© 2026 MP State Tourism Development Corporation Ltd.</span>
+        <div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Accessibility</a><a href="#">Sitemap</a></div>
+      </div>
+    </div>
+    <div class="wordmark" aria-hidden="true">Madhya <em>Pradesh</em></div>
+  </footer>
+
+  <nav class="dock" id="dock" aria-label="Quick actions">
+    <a href="#discover"><svg class="i">
+        <use href="#map" />
+      </svg><span>Explore</span></a>
+    <a href="#book" class="mid"><svg class="i">
+        <use href="#bed" />
+      </svg><span>Book a stay</span></a>
+    <a href="#events"><svg class="i">
+        <use href="#cal" />
+      </svg><span>Events</span></a>
+    <button id="dockMenu" aria-label="Menu"><svg class="i">
+        <use href="#m" />
+      </svg></button>
+  </nav>
+  <a href="#" class="chat" aria-label="Chat with us"><svg class="i" style="width:22px;height:22px">
+      <use href="#chat" />
+    </svg></a>
+
+  <script>
+    const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+
+    // header + dock state on scroll
+    const hdr = $('#hdr'), dock = $('#dock');
+    const onScroll = () => { hdr.classList.toggle('solid', scrollY > 60); dock.classList.toggle('show', scrollY > innerHeight * .8); };
+    addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+    // drawer
+    const drawer = $('#drawer');
+    ['#burger', '#dockMenu'].forEach(s => $(s).onclick = () => drawer.classList.add('open'));
+    $('#drawerX').onclick = () => drawer.classList.remove('open');
+    $$('#drawer a').forEach(a => a.onclick = () => drawer.classList.remove('open'));
+
+    // hero slides with progress thumbs
+    const slides = $$('.slide'), thumbs = $$('.thumb');
+    let cur = 0, timer;
+    function show(i) {
+      slides[cur].classList.remove('on'); thumbs[cur].classList.remove('on');
+      cur = i; slides[cur].classList.add('on');
+      void thumbs[cur].offsetWidth; thumbs[cur].classList.add('on');
+      clearTimeout(timer); timer = setTimeout(() => show((cur + 1) % slides.length), 6000);
+    }
+    thumbs.forEach((t, i) => t.onclick = () => show(i));
+    show(0);
+
+    // guests popover
+    const counts = { a: 2, c: 0, r: 1 }, mins = { a: 1, c: 0, r: 1 };
+    const gBtn = $('#gBtn'), guests = $('#guests');
+    gBtn.onclick = e => { e.stopPropagation(); guests.classList.toggle('open'); };
+    guests.onclick = e => {
+      e.stopPropagation();
+      const b = e.target.closest('[data-g]'); if (!b) return;
+      const [k, d] = b.dataset.g.split(':');
+      counts[k] = Math.min(10, Math.max(mins[k], counts[k] + +d));
+      $(`[data-v="${k}"]`).textContent = counts[k];
+      const kids = counts.c ? ` · ${counts.c} child${counts.c > 1 ? 'ren' : ''}` : '';
+      gBtn.textContent = `${counts.a} adult${counts.a > 1 ? 's' : ''}${kids} · ${counts.r} room${counts.r > 1 ? 's' : ''}`;
+    };
+    document.addEventListener('click', () => guests.classList.remove('open'));
+
+    // default dates
+    const iso = d => d.toISOString().slice(0, 10), day = 864e5, now = Date.now();
+    const cin = $('#cin'), cout = $('#cout');
+    cin.min = cin.value = iso(new Date(now + day * 7));
+    cout.min = cout.value = iso(new Date(now + day * 9));
+    cin.onchange = () => { cout.min = cin.value; if (cout.value <= cin.value) cout.value = iso(new Date(new Date(cin.value).getTime() + day)); };
+
+    // experience accordion
+    $$('.pane').forEach(p => {
+      const open = () => $$('.pane').forEach(x => x.classList.toggle('on', x === p));
+      p.addEventListener('mouseenter', () => { if (matchMedia('(hover:hover)').matches) open(); });
+      p.addEventListener('click', open);
+    });
+
+    // stays track: arrows, drag, progress, filters
+    const track = $('#track'), bar = $('#progBar');
+    const step = () => (track.querySelector('.stay:not(.hide)')?.offsetWidth || 360) + 22;
+    $('#tPrev').onclick = () => track.scrollBy({ left: -step(), behavior: 'smooth' });
+    $('#tNext').onclick = () => track.scrollBy({ left: step(), behavior: 'smooth' });
+    const prog = () => {
+      const max = track.scrollWidth - track.clientWidth;
+      const w = Math.max(12, track.clientWidth / track.scrollWidth * 100);
+      bar.style.width = w + '%';
+      bar.style.left = (max > 0 ? track.scrollLeft / max * (100 - w) : 0) + '%';
+    };
+    track.addEventListener('scroll', prog, { passive: true }); addEventListener('resize', prog); prog();
+    let drag = null;
+    track.addEventListener('pointerdown', e => { if (e.pointerType === 'mouse') drag = { x: e.clientX, s: track.scrollLeft, moved: false }; });
+    addEventListener('pointermove', e => { if (!drag) return; const dx = e.clientX - drag.x; if (Math.abs(dx) > 4) drag.moved = true; track.style.scrollSnapType = 'none'; track.scrollLeft = drag.s - dx; });
+    addEventListener('pointerup', () => { if (drag) { track.style.scrollSnapType = ''; setTimeout(() => drag = null, 0); } });
+    track.addEventListener('click', e => { if (drag?.moved) e.preventDefault(); }, true);
+    $('#filters').onclick = e => {
+      const b = e.target.closest('button'); if (!b) return;
+      $$('#filters button').forEach(x => x.classList.toggle('on', x === b));
+      $$('.stay').forEach(s => s.classList.toggle('hide', b.dataset.f !== 'all' && s.dataset.k !== b.dataset.f));
+      track.scrollLeft = 0; prog();
+    };
+
+    // package list: image follows cursor
+    const fi = $('#floatImg'), fimg = fi.querySelector('img');
+    $$('.pk-row').forEach(r => {
+      r.addEventListener('mouseenter', () => { fimg.src = r.dataset.img; fi.classList.add('on'); });
+      r.addEventListener('mouseleave', () => fi.classList.remove('on'));
+    });
+    addEventListener('mousemove', e => { fi.style.left = e.clientX + 'px'; fi.style.top = e.clientY + 'px'; }, { passive: true });
+
+    // testimonials
+    const qs = $$('.q'), qd = $('#qdots');
+    let qi = 0;
+    qs.forEach((_, i) => { const b = document.createElement('button'); b.setAttribute('aria-label', 'Review ' + (i + 1)); b.onclick = () => q(i); qd.appendChild(b); });
+    function q(i) { qs[qi].classList.remove('on'); qd.children[qi].classList.remove('on'); qi = i; qs[qi].classList.add('on'); qd.children[qi].classList.add('on'); }
+    q(0); setInterval(() => q((qi + 1) % qs.length), 7000);
+
+    // reveal + count-up
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in'); io.unobserve(e.target);
+      e.target.querySelectorAll('[data-count]').forEach(n => {
+        const to = +n.dataset.count, t0 = performance.now();
+        const tick = t => { const k = Math.min(1, (t - t0) / 1200); n.textContent = Math.round(to * k); if (k < 1) requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+      });
+    }), { threshold: .12 });
+    $$('.rv').forEach(el => io.observe(el));
+  </script>
+</body>
+
+</html>
